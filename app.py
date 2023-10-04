@@ -15,7 +15,7 @@ def index():
         start_date = request.form['start_date']
         end_date = request.form['end_date']
 
-        prediction_pipeline = PredictionPipeline("artifacts/transformed_data/data.csv",
+        prediction_pipeline = PredictionPipeline("artifacts/data_ingestion/data.csv",
                                                   "artifacts/training/model.json")
         future_w_features = prediction_pipeline.predict_future(start_date, end_date)
 
