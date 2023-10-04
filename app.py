@@ -49,8 +49,3 @@ def download_csv():
     df.to_excel(excel_file_path, index=False)
 
     return send_file(excel_file_path, as_attachment=True, download_name=excel_filename)
-
-if __name__ == '__main__':
-  
-    # Run Flask in the main thread with host='0.0.0.0' and port=8080
-    app.run()

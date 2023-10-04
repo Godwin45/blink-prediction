@@ -1,14 +1,13 @@
 pandas
 numpy
+Gunicorn
 seaborn
 matplotlib
 scikit-learn
 xgboost
 Flask
-dvc
 plotly
 tk-tools
-notebook
 matplotlib
 seaborn
 python-box==6.0.2

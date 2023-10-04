@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Future Power Predictions</title>
+    <title>Future Weight Predictions</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         body {
@@ -84,14 +84,14 @@
     </style>
 </head>
 <body>
-    <h1>Future Power Predictions</h1>
+    <h1>Future Weight Predictions</h1>
     <h2>Date Range: {{ future_w_features.index.min() }} to {{ future_w_features.index.max() }}</h2>
 
     <!-- Hidden input field to hold the CSV data -->
     <input type="hidden" id="csv_data" value="{{ future_w_features.to_csv(index=False) }}">
 
     <!-- Download link for the CSV dataset -->
-    <a id="download_link" href="#" download>Download Dataset</a>
+    <a id="download_link" href="#" download>Download CSV Predictions</a>
 
     <!-- Display the Plotly plot -->
     <div id="plotly-plot"></div>
